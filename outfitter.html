@@ -1,0 +1,223 @@
+<!--
+KELYNNE J. LEE
+RallyPoint Web Design
+outfitter.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Outfitters</title>
+		<link rel="stylesheet" type="text/css" href="css/material-kit.css">
+		<link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css">
+		<link rel="stylesheet" type="text/css" href="css/outfitter.css">
+  </head>
+<body id="huntpage" style="padding-right: 0 !important">
+
+  <!-- Navigation -->
+<section id="header" >
+	<nav class="navbar fixed-top navbar-expand-lg flex-column flex-md-row ">
+		<div class="container">
+			
+				<a class="navbar-brand" href="#home"><span><img src="images/rpo_logo.webp" class="d-inline-block mr-1 mb-2" alt="RPO Deer Logo" style="max-height: 48px; width: 48px; padding-bottom: 8px;"></span>RallyPoint Outdoors</a>
+				
+			<div class="navbar-nav-scroll" >
+				<ul class="navbar-nav ml-auto flex-row" style=" color:#001730;">
+					
+					<li class="nav-item"><a class="nav-link" href="#">Chapters</a></li>
+					<form class="form-inline">
+					<li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#myModal1" >Contact</a></li>
+					<li class="nav-item"><button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#myModal2">About</button></li>
+					</form>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</section>
+	<div class="container text-center">
+
+		<!--<div class="col-sm-4 fixed-top" style="padding-top: 80px;" id="fixedContainer">-->
+		<div class="row">
+		    <div class="col-lg-3">
+			<div class="sticky-top" style="padding-top:80px;" id="fixedContainer">
+			    	<p class="h6 text-left text-white ">Our Mission</p>
+				<p class="text-left text-white">
+						RallyPoint Outdoors aims to do its part to combat  the  devastating losses  from  Veteran  suicides
+						by  providing  our nations heroes with restorative outdoor experiences. We strive to teach,
+						coach and mentor new hunters who have honorably served or are currently serving along with promoting
+						conservation and the preservation of wildlife.
+				 </p>
+					<a class="btn btn-secondary mb-4" href="#">Donate Today</a>
+					<p class="text-center text-white">Veteran Hunting and fishing mentorship organization.</p>
+				<br><br><br>
+				<a class="btn btn-primary btn-round"
+				  href="https://kjldesigns.github.io" role="button">Back to <img src="images/kjlLogo.png" height="30px" alt="KJL Logo">
+				</a>
+				<br><br><br>
+			</div>
+		    </div>
+		    <div class="col-lg-9">
+			<div class="gallery" id="gallery">
+			  <!-- Grid column -->
+			  <div class="mb-3 pics animation all 2">
+			    <img class="img-fluid" src="images/rpo1.jpg" alt="gallery Image 1">
+			  </div>
+			  <div class="mb-3 pics animation all 1">
+			    <img class="img-fluid" src="images/rpo2.jpg" alt="gallery Image 2">
+			  </div>
+			  <div class="mb-3 pics animation all 2">
+			    <img class="img-fluid" src="images/rpo3.jpg" alt="gallery Image 3">
+			  </div>
+			  <div class="mb-3 pics animation all 2">
+			    <img class="img-fluid" src="images/rpo4.jpg" alt="gallery Image 4">
+			  </div>
+			  <div class="mb-3 pics animation all 1">
+			    <img class="img-fluid" src="images/rpo5.jpg" alt="gallery Image 5">
+			  </div>
+			</div>
+		    </div>
+		</div>
+			
+		
+			
+		
+		
+	</div>
+
+  <!-- Modal -->
+	<div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true" >
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Contact Form</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form method="POST" id="contactForm" name="contactForm" action="https://myphpscript2.000webhostapp.com/mail/form-to-email.php" >
+			    <div class="card" >
+			      <div class="card-body text-left">
+			        <!--Header-->
+			        <div class="text-center">
+			          <h3 class="white-text">
+			            <i class="fa fa-user"></i>Get in Touch!</h3>
+			          <hr class="hr-light">
+			        </div>
+			        <!--Body-->
+			        <div class="md-form">
+			          <i class="fa fa-user prefix white-text active"></i>
+			          <input id="name" type="text" name="name" class="white-text form-control">
+			          <label for="form1" class="active">Your name</label>
+			        </div>
+			        <div class="md-form">
+			          <i class="fa fa-envelope prefix white-text active"></i>
+			          <input id="address" type="email" name="address" class="white-text form-control">
+			          <label for="form2" class="active">Your email</label>
+			        </div>
+							<div class="form-group">
+								<label for="exampleMessage" class="bmd-label-floating">Your Message</label>
+								<textarea id="message" type="text" class="form-control" rows="4" name="message"></textarea>
+							</div>
+							<div class="row">
+								<div class="col-md-4 ml-auto mr-auto text-center">
+									<button class="btn btn-primary btn-raised" type="submit" onclick="return validateForm();">Submit
+								</button>
+								</div>
+			        </div>
+							
+			      </div>
+			    </div>
+						<!--alert modal-->
+						<div id="alertModal" class="modal fade">
+						    <div class="modal-dialog">
+							<div class="modal-content">
+							    <div class="modal-header">
+								    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true">&times;</span>
+									</button>
+							    </div>
+							    <div class="modal-body">
+								    <h4></h4>
+							    </div>
+							    <div class="modal-footer">
+								<button class="btn btn-default" data-dismiss="modal">
+								    Close</button>
+							    </div>
+							</div>
+						    </div>
+						</div>
+						
+				</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true" >
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="modal2">About Us</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+					<p>RallyPoint Outdoors is a nonprofit corporation whose purpose is to provide educational,
+						ecological, recreational and Veteran’s services, to Active Duty, retired, medically retired,
+						military personnel of all branches and their dependents, and Gold Star family members.
+					 </p>
+
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<footer class="fixed-bottom page-footer mt-2" style="padding-right: 0 !important">
+		<div class="container" id="contact">
+			<div class="row">
+					<div class="col ">
+							<ul class="social social-circle ">
+								<li><a href="#" class="fb">
+								<i class="fa fa-facebook-f" ></i></a></li>
+								<li><a href="#" class="insta" >
+								<i class="fa fa-instagram" ></i></a></li>
+								<li><a href="#" class="yt">
+								<i class="fa fa-youtube"></i></a></li>
+								<li><a href="#" class="call">
+								<i class="fa fa-phone" ></i></a></li>
+							</ul>
+								<p class="text-center text-white mt-3">RallyPoint Outdoors</p>
+					</div>
+	    </div>
+
+			<div class="footer-copyright text-center text-white">rallypointoutdoors.com &copy<script>document.write(new Date().getFullYear())</script>
+
+			</div>
+		</div>
+	</footer>
+
+  <!-- Bootstrap core JavaScript -->
+	<script src="js/core/jquery.min.js" type="text/javascript"></script>
+	<script src="js/core/popper.min.js" type="text/javascript"></script>
+	<script src="js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+	<script src="js/plugins/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<script src="js/material-kit.js"></script>
+	<script src="js/kjl_script.js"></script>
+
+	<script>new WOW().init();</script>
+</body>
+
+</html>
