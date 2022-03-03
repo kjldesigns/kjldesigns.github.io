@@ -2,12 +2,47 @@
     overflow: auto !important;
     padding-right: 0px !important;
 }
-
-h2{
-  font-family: 'Viga', sans-serif;
+.main{
+  background-color: #f0efeb;
 }
-a.nav-link {
-  color:#001730;
+.bg_img {
+  background-color: rgba(240, 239, 235, - );
+  position: fixed;
+  background-repeat:no-repeat;
+  left: 0;
+  background-size:contain;
+  background-position:center;
+  opacity: .1;
+}
+#words {
+  width: 90%;
+}
+#imgCarousel {
+  margin: 0 auto;
+}
+.carousel-item{
+  margin: 0 auto;
+  height: 800px;
+}
+
+footer {
+  background-color: #f0efeb;
+}
+h1, h2, h3, h4{
+  font-family: 'Teko', sans-serif;
+}
+a.navbar-brand {
+font-family: 'Teko', sans-serif;
+}
+.card-title {
+  font-family: 'Teko', sans-serif;
+}
+.nav-item{
+  font-family: 'Teko', sans-serif;
+
+}
+.card-title{
+  color: black;
 }
 p {
   font-weight: 700;
@@ -15,12 +50,8 @@ p {
 h3.card-title{
   color:#001730;
 }
-body {
-  padding-top: 120px !important;
-  padding-right: 0 !important;
-}
+
 .page-footer {
-  background-color:#001730;
   margin-bottom: 0;
 }
 
@@ -34,8 +65,8 @@ body {
    width: 100%;
 }
 
-.navbar-toggler{
-  color: #001730;
+.navbar-toggler-icon{
+  background-color: black;
 }
 .navbar .navbar-collapse {
   text-align: center;
@@ -121,19 +152,20 @@ ul.social li {
 .btn.btn-primary:active,
 .btn.btn-primary.focus,
 .btn.btn-primary:hover  {
-  background-color:#001730 !important;
+  background-color:#black !important;
 }
 .btn.btn-primary {
-  background-color:  #ff0000;
+  background-color:  black;
+  font-family: 'Teko', sans-serif;
 }
 .btn.btn-primary:hover{
-  background-color:  #ff0000;
+  background-color:  black;
 }
 .btn.btn-primary:active{
-  background-color:  #ff0000;
+  background-color:  black;
 }
 .btn.btn-primary:focus{
-  background-color: #ff0000;
+  background-color: black;
 }
 .btn.btn-secondary {
   color: #001730;
@@ -158,12 +190,13 @@ ul.social li {
 .card {
   box-shadow: none;
 }
+.card-img-top {
+    object-fit: cover;
+}
 .icon-credit {
   opacity: 0;
 }
-img.img-fluid{
-  color:#003166;
-}
+
 .footer {
   position: relative;
   margin-top: -150px; /* negative value of footer height */
@@ -172,21 +205,17 @@ img.img-fluid{
   padding-top:20px;
   padding-right: 0!important;
 }
-
+.nav {
+  margin-bottom: 0 !important;
+}
 #dot {
   background-color: #ff0000;
   border-style: none;
 }
-#huntpage {
-  /*background-image: url("../images/texture4.jpg");*/
-  background-color: #001730;
-  height: 100%;
-  padding-right: 0 !important;
-}
+
 @media (max-width: 767px) {
     #fixedContainer {
     position: relative;
-        
+
     }
 }
-
